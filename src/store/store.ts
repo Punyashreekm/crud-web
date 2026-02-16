@@ -1,14 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import userReducer from './userSlice';
-
+import { usersApi } from '../services/usersApi';
 
 export const store = configureStore({
-    reducer: {
-        users: userReducer,
-    },
+  reducer: {
+    [usersApi.reducerPath]: usersApi.reducer,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(usersApi.middleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
-
-export { fetchUsers, addUser, updateUser, deleteUser } from './userSlice';

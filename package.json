@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:mock": "VITE_API_BASE_URL=http://localhost:3000 vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api": "json-server --watch db.json --port 3000"
+    "api": "json-server --watch db.json --port 3000",
+    "api:mock": "json-server --watch db.json --host 0.0.0.0 --port 3000",
+    "test:mock": "npm run api:mock"
   },
   "dependencies": {
     "@ant-design/icons": "^6.1.0",

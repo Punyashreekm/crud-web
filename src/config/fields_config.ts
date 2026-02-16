@@ -9,18 +9,18 @@ export interface FieldConfig {
 
 export const USER_FIELDS: FieldConfig[] = [
     {
-        name: 'firstName',
-        label: 'First Name',
+        name: 'name',
+        label: 'Name',
         type: 'text',
         required: true,
-        placeholder: 'Enter first name'
+        placeholder: 'Enter name'
     },
     {
-        name: 'lastName',
-        label: 'Last Name',
+        name: 'username',
+        label: 'Username',
         type: 'text',
         required: true,
-        placeholder: 'Enter last name'
+        placeholder: 'Enter username'
     },
     {
         name: 'email',
@@ -36,5 +36,11 @@ export const USER_FIELDS: FieldConfig[] = [
         required: true,
         placeholder: 'Enter phone number'
     },
-    // Adding a new field here (e.g. dateOfBirth) will automatically reflect in the UI
+    {
+        name: 'website',
+        label: 'Website',
+        type: 'text',
+        required: false,
+        placeholder: 'Enter website'
+    }
 ];
