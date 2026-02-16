@@ -1,42 +1,62 @@
-# User Management CRUD Application
+# CRUD Web
 
-A CRUD-style user management app built with React, RTK Query, and Ant Design.
+A CRUD-style user management app built with React, Redux Toolkit RTK Query, and Ant Design.
 
-## API Source
+- Repository: [https://github.com/Punyashreekm/crud-web](https://github.com/Punyashreekm/crud-web)
 
-Default API is:
+## Prerequisites
 
-- `https://jsonplaceholder.typicode.com/users`
+- Node.js 18+
+- npm 9+
 
-RTK Query base URL can be overridden with `VITE_API_BASE_URL`.
+## Installation
 
-## Setup
+```bash
+git clone https://github.com/Punyashreekm/crud-web.git
+cd crud-web
+npm install
+```
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Run frontend:
-   ```bash
-   npm run dev
-   ```
+## Run Application
 
-## JSON Server Mock Testing
+```bash
+npm run dev
+```
 
-If you want to test against local JSON Server instead:
+App runs on Vite default URL (usually `http://localhost:5173`).
 
-1. Start JSON Server:
-   ```bash
-   npm run test:mock
-   ```
-2. Run frontend with local API:
-   ```bash
-   npm run dev:mock
-   ```
+## Build for Production
 
-## Pagination + URL State
+```bash
+npm run build
+```
 
-User list pagination uses Ant Design `Pagination` component and keeps page in URL search params:
+## Preview Production Build
 
-- query key: `page`
-- default: `?page=1`
+```bash
+npm run preview
+```
+
+## Optional: Mock API with JSON Server
+
+Run JSON Server:
+
+```bash
+npm run test:mock
+```
+
+Run frontend against local mock API:
+
+```bash
+npm run dev:mock
+```
+
+## API
+
+Default API base URL:
+
+- `https://jsonplaceholder.typicode.com`
+
+You can override with environment variable:
+
+- `VITE_API_BASE_URL`
