@@ -2,6 +2,9 @@
 
 A robust, extensible, and user-friendly CRUD (Create, Read, Update, Delete) web application built with **React**, **Redux Toolkit**, and **Ant Design**.
 
+- **Live Demo:** [https://simple-crud-web.netlify.app/](https://simple-crud-web.netlify.app/)
+- **GitHub Repository:** [https://github.com/Punyashreekm/crud-web](https://github.com/Punyashreekm/crud-web)
+
 ## 🚀 Setup Instructions
 
 ### Prerequisites
